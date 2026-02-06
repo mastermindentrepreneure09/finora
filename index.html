@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Finora – Finance Made Simple</title>
+
+  <!-- SEO & AdSense Friendly Meta -->
+  <meta name="description" content="Finora is a student-focused finance education platform providing easy blogs and calculators to understand SIPs, investing, mutual funds, and personal finance in India.">
+  <meta name="keywords" content="finance for students, SIP calculator, finance blogs, investing basics, mutual funds India, personal finance">
+  <meta name="author" content="Sairaj Kashid">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google AdSense (replace after approval) -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="assets/logo.png" alt="Finora Logo">
+    <span>Finora</span>
+  </div>
+
+  <nav>
+    <a class="nav-link active" data-section="home">Home</a>
+    <a class="nav-link" data-section="blogs">Blogs</a>
+    <a class="nav-link" data-section="calculators">Calculators</a>
+    <a class="nav-link" data-section="about">About</a>
+    <a class="nav-link" data-section="privacy">Privacy Policy</a>
+  </nav>
+
+  <div class="theme-switch">
+    <input type="checkbox" id="themeToggle">
+    <label for="themeToggle"></label>
+  </div>
+</header>
+
+<!-- HOME -->
+<section id="home" class="section active">
+  <div class="home-wrapper">
+    <div class="home-text">
+      <h1>Finance Made Simple</h1>
+
+      <p>
+        Finora is a simple and reliable finance education platform
+        designed to help students and beginners understand money,
+        investing, and personal finance without complex terminology.
+      </p>
+
+      <p>
+        Many people find finance confusing or intimidating. Finora
+        removes that fear by explaining financial concepts in a
+        clear, practical, and beginner-friendly way.
+      </p>
+
+      <p>
+        Whether you are learning about SIPs, mutual funds, compound
+        interest, or long-term investing, Finora helps you build
+        financial confidence step by step.
+      </p>
+
+      <p>
+        The platform focuses on education, transparency, and
+        long-term learning—not shortcuts or unrealistic promises.
+      </p>
+
+      <p><strong>No login. No confusion. Just finance.</strong></p>
+
+      <ul class="home-points">
+        <li>📘 Beginner-friendly finance blogs</li>
+        <li>📊 SIP & interest calculators</li>
+        <li>🎓 Built especially for students & learners</li>
+      </ul>
+    </div>
+
+    <div class="home-image">
+      <img src="assets/home.png" alt="Finance Illustration">
+    </div>
+  </div>
+</section>
+
+<!-- BLOGS -->
+<section id="blogs" class="section">
+  <h2>Blogs</h2>
+  <div class="blog-list" id="blogList">
+    Loading blogs...
+  </div>
+</section>
+
+<!-- CALCULATORS -->
+<section id="calculators" class="section">
+  <h2>Calculators</h2>
+
+  <div class="calculator-box">
+    <h3>SIP Calculator</h3>
+
+    <label>Monthly Investment (₹)</label>
+    <input type="number" id="sipAmount">
+
+    <label>Annual Interest Rate (%)</label>
+    <input type="number" id="sipRate">
+
+    <label>Time (Years)</label>
+    <input type="number" id="sipYears">
+
+    <button onclick="calculateSIP()">Calculate SIP</button>
+    <p id="sipResult"></p>
+  </div>
+
+  <div class="calculator-box">
+    <h3>Interest Calculator</h3>
+
+    <label>Principal Amount (₹)</label>
+    <input type="number" id="principal">
+
+    <label>Interest Rate (%)</label>
+    <input type="number" id="rate">
+
+    <label>Time (Years)</label>
+    <input type="number" id="time">
+
+    <button onclick="calculateInterest()">Calculate Interest</button>
+    <p id="interestResult"></p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Finora</h2>
+
+  <h3>What is Finora?</h3>
+  <p>
+    Finora is an independent finance education platform created to
+    help students and beginners understand personal finance and
+    investing in a simple and practical way.
+  </p>
+
+  <br>
+
+  <h3>Our Mission</h3>
+  <p>
+    Our mission is to remove confusion, fear, and misinformation
+    around finance by providing clear explanations and educational
+    tools that anyone can understand.
+  </p>
+
+  <br>
+
+  <h3>What We Offer</h3>
+  <p>
+    Finora provides finance blogs, calculators, and learning
+    resources focused on SIPs, mutual funds, interest, and
+    long-term financial planning.
+  </p>
+
+  <br>
+
+  <h3>Who We Are</h3>
+  <p>
+    Founded by <strong>Sairaj Kashid</strong>, Finora is built with
+    a student-first mindset and focuses purely on education rather
+    than financial advice or product promotion.
+  </p>
+
+  <br>
+
+  <h3>Contact</h3>
+  <p>
+    For questions, feedback, or suggestions, contact us at:
+    <strong>mastermind.entrerpreneure.09@gmail.com</strong>
+  </p>
+</section>
+
+<!-- PRIVACY POLICY -->
+<section id="privacy" class="section">
+  <h2>Privacy Policy</h2>
+
+  <p>
+    At Finora, we value the privacy of our visitors. This Privacy
+    Policy document outlines the types of information that is
+    collected and recorded by Finora and how we use it.
+  </p>
+
+  <br>
+
+  <h3>Information We Collect</h3>
+  <p>
+    Finora does not collect personal information directly from
+    users. However, third-party services such as Google AdSense
+    may use cookies to display advertisements.
+  </p>
+
+  <br>
+
+  <h3>Cookies and Web Beacons</h3>
+  <p>
+    Google, as a third-party vendor, uses cookies to serve ads on
+    Finora. Google’s use of the DART cookie enables it to serve ads
+    to users based on their visit to this and other websites.
+  </p>
+
+  <br>
+
+  <h3>Third-Party Privacy Policies</h3>
+  <p>
+    Finora’s Privacy Policy does not apply to other advertisers or
+    websites. We advise you to consult the respective Privacy
+    Policies of third-party ad servers for more detailed
+    information.
+  </p>
+
+  <br>
+
+  <h3>Consent</h3>
+  <p>
+    By using our website, you hereby consent to our Privacy Policy
+    and agree to its terms.
+  </p>
+
+  <br>
+
+  <h3>Contact Us</h3>
+  <p>
+    If you have any questions about this Privacy Policy, you may
+    contact us at:
+    <strong>mastermind.entrerpreneure.09@gmail.com</strong>
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>Founded by Sairaj Kashid</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
